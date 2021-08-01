@@ -32,26 +32,37 @@
       <i class="fad fa-chevron-double-down"></i>
     </button>
     <div class="flex w-full items-center justify-between">
-      <div class="flex flex-row items-center text-gray-600">
+      <div class="flex flex-row items-center text-gray-500">
         <a class="ml-2 hover:text-gray-900" href="#" title="email"><i class="fad fa-envelope-open-text"></i></a>
         <a class="ml-2 hover:text-gray-900" href="#" title="comments"><i class="fad fa-comments-alt"></i></a>
         <a class="ml-2 hover:text-gray-900" href="#" title="checks"><i class="fad fa-check-circle"></i></a>
         <a class="ml-2 hover:text-gray-900" href="#" title="calendar"><i class="fad fa-calendar-exclamation"></i></a>
       </div>
-      <div class="flex flex-row items-center text-gray-600">
-        <a class="ml-2 hover:text-gray-900" href="#" title="messages"><i class="fad fa-comments"></i></a>
-        <a class="ml-2 hover:text-gray-900" href="#" title="notifications"><i class="fad fa-bells"></i></a>
-        <button class="flex flex-row items-center ml-3 focus:outline-none">
+      <div class="flex flex-row items-center text-gray-500">
+        <a class="ml-4 hover:text-gray-900" href="#" title="messages"><i class="fad fa-comments"></i></a>
+        <a class="ml-4 hover:text-gray-900" href="#" title="notifications"><i class="fad fa-bells"></i></a>
+        <button class="dropdown flex flex-row items-center relative ml-3 focus:outline-none">
           <div class="w-8 h-8 rounded-full">
             <img src="./images/user.svg" alt="Avater">
           </div>
-          <strong class="capitalize ml-2 text-gray-800">abdelilah</strong>
-          <a class="ml-2 hover:text-gray-900" href="#" title="menu"><i
+          <strong class="capitalize ml-4 text-gray-800">abdelilah</strong>
+          <a class="ml-4 hover:text-gray-900" href="#" title="menu"><i
               class="fad fa-chevron-down ml-2 text-xs leading-none"></i></a>
         </button>
+        <div class="dropdown-menu hidden text-gray-500 mt-7 absolute rounded bg-white shadow right-1 top-12 w-48">
+          <a class="px-4 py-2 capitalize bg-white block font-medium hover:bg-gray-200 hover:text-gray-900" href="#"
+            title="email"><i class="fad fa-user-edit mr-2"></i>profile</a>
+          <a class="px-4 py-2 capitalize bg-white block font-medium hover:bg-gray-200 hover:text-gray-900" href="#" title="comments"><i
+              class="fad fa-inbox-in mr-2"></i>inbox</a>
+          <a class="px-4 py-2 capitalize bg-white block font-medium hover:bg-gray-200 hover:text-gray-900" href="#" title="checks"><i
+              class="fad fa-cog mr-2"></i>settings</a>
+          <a class="px-4 py-2 capitalize bg-white block font-medium hover:bg-gray-200 hover:text-gray-900 border-t-2" href="#" title="calendar"><i
+              class="fad fa-user-times mr-2"></i>log out</a>
+        </div>
       </div>
     </div>
   </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
