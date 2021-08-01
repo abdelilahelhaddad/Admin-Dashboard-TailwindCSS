@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description"
-    content="his is an admin dashboard created with html5 css3 javscript using tailwindCSS UI framework.">
+    content="This is an admin dashboard created with html5 css3 javscript using tailwindCSS UI framework.">
   <meta name="keywords" content="admin dashboard, tailwindcss, html5, css3, javascript">
   <meta name="author" content="Abdelilah Elhaddad">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,13 +16,30 @@
     content="This is an admin dashboard created with html5 css3 javscript using tailwindCSS UI framework.">
   <meta property="og:image" content="https://abdelilahelhaddad.github.io/Admin-Dashboard-TailwindCSS/images/icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/tailwind.min.css">
+  <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
+  <link rel="stylesheet" href="./css/tailwind.min.css">
   <title>Admin Dashboard TailwindCSS</title>
 </head>
 
-<body>
-
+<body class="bg-gray-100">
+  <div class="flex flex-row items-center w-full p-6 bg-white border-b border-gray-300">
+    <div class="flex flex-row w-52">
+      <img src="./images/logo.png" alt="Logo" class="w-10">
+      <strong class="ml-2 text-gray-800">Dashboard</strong>
+    </div>
+    <button id="navbarToggle" class="hidden blockfixed right-0 mr-6">
+      <i class="fad fa-chevron-double-down"></i>
+    </button>
+    <div class="flex w-full items-center justify-between">
+      <div class="text-gray-600">
+        <a class="ml-2 hover:text-gray-900" href="#" title="email"><i class="fad fa-envelope-open-text"></i></a>
+        <a class="ml-2 hover:text-gray-900" href="#" title="comments"><i class="fad fa-comments-alt"></i></a>
+        <a class="ml-2 hover:text-gray-900" href="#" title="checks"><i class="fad fa-check-circle"></i></a>
+        <a class="ml-2 hover:text-gray-900" href="#" title="calendar"><i class="fad fa-calendar-exclamation"></i></a>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
