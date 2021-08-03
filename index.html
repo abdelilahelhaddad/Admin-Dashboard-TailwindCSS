@@ -24,27 +24,29 @@
 
 <body class="bg-gray-100">
   <!-- Navbar -->
-  <div class="flex flex-row items-center w-full p-6 bg-white border-b border-gray-300">
+  <div class="flex flex-row items-center justify-between w-full p-6 bg-white border-b border-gray-300">
     <div class="flex flex-row w-80">
       <a href="index.html"><img src="./images/logo.png" alt="Logo" class="w-10"></a>
       <strong class="capitalize ml-2 text-gray-800">dashboard</strong>
     </div>
-    <button id="navbarToggle" class="hidden blockfixed right-0 mr-6">
+    <button id="navbarToggle" class="md:hidden block blockfixed right-0 mr-6">
       <i class="fad fa-chevron-double-down"></i>
     </button>
-    <div class="flex w-full items-center justify-between">
-      <div class="flex flex-row items-center text-gray-500">
+    <div class="hidden md:flex flex w-full items-center justify-between">
+      <div class="hidden md:flex flex flex-row items-center text-gray-500">
         <a class="ml-2 hover:text-gray-900" href="#" title="email"><i class="fad fa-envelope-open-text"></i></a>
         <a class="ml-2 hover:text-gray-900" href="#" title="comments"><i class="fad fa-comments-alt"></i></a>
         <a class="ml-2 hover:text-gray-900" href="#" title="checks"><i class="fad fa-check-circle"></i></a>
         <a class="ml-2 hover:text-gray-900" href="#" title="calendar"><i class="fad fa-calendar-exclamation"></i></a>
       </div>
       <div class="flex flex-row items-center text-gray-500">
-        <a class="ml-4 hover:text-gray-900" href="#" title="messages"><i class="fad fa-comments"></i></a>
-        <a class="ml-4 hover:text-gray-900" href="#" title="notifications"><i class="fad fa-bells"></i></a>
-        <button class="dropdown flex flex-row items-center relative ml-3 focus:outline-none">
+        <a class="hidden md:block ml-4 hover:text-gray-900" href="#" title="messages"><i
+            class="fad fa-comments"></i></a>
+        <a class="hidden md:block ml-4 hover:text-gray-900" href="#" title="notifications"><i
+            class="fad fa-bells"></i></a>
+        <button class="hidden md:flex dropdown flex flex-row items-center relative ml-3 focus:outline-none">
           <div class="w-8 h-8 rounded-full overflow-hidden">
-            <img src="./images/user.svg" alt="Avater">
+            <img src="./images/user.svg" alt="Avatar">
           </div>
           <strong class="capitalize ml-4 text-gray-800">abdelilah</strong>
           <a class="ml-4 hover:text-gray-900" href="#" title="menu"><i
@@ -66,7 +68,7 @@
   <!-- Main Section -->
   <div class="flex flex-row">
     <!-- Sidebar -->
-    <div class="flex flex-row p-6 border-r border-gray-300 w-80 h-auto bg-white">
+    <div class="hidden md:flex flex flex-row p-6 border-r border-gray-300 w-80 h-auto bg-white">
       <div class="flex flex-col">
         <p class="tracking-wider text-xs mb-4 uppercase text-gray-600">home</p>
         <a href="#"
@@ -129,7 +131,7 @@
     <!-- Content Section -->
     <div class="bg-gray-100 w-screen p-6">
       <!-- Total Store Infos -->
-      <div class="grid grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6">
         <div
           class="card transition duration-300 ease-in-out transform hover:scale-105 bg-white shadow p-6 rounded border border-gray-300">
           <div class="card-body flex flex-col">
@@ -196,7 +198,7 @@
         </div>
       </div>
       <!-- Alerts -->
-      <div class="grid grid-cols-2 gap-6 mt-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
         <div class="alert text-center font-medium px-auto py-3 bg-red-300 text-red-800 rounded border border-red-600">
           The Process Failed
         </div>
@@ -206,7 +208,7 @@
         </div>
       </div>
       <!-- Today Store Infos -->
-      <div class="grid grid-cols-5 gap-6 mt-6">
+      <div class="grid grid-cols-1 xl:grid-cols-5 md:grid-cols-2 gap-6 mt-6">
         <div class="card bg-white shadow p-5 rounded border border-gray-300">
           <div class="card-body flex flex-col">
             <div class="flex flex-row items-center mb-5">
@@ -272,7 +274,7 @@
             <a href=""><i class="fad fa-ellipsis-v"></i></a>
           </div>
         </div>
-        <div class="card-body bg-white p-6 rounded-b grid grid-cols-2 gap-6">
+        <div class="card-body bg-white p-6 rounded-b grid-cols-1 md:grid-cols-2 md:gap-6">
           <div class="p-6">
             <h1 class="text-5xl font-medium">5,333</h1>
             <p class="capitalize xl text-gray-500 mt-1">sales this months</p>
@@ -294,13 +296,14 @@
                 in comparison to last month.
               </p>
             </div>
-            <a href="" class="px-44 py-3 bg-green-400 text-white rounded capitalize">view details</a>
+            <a href="" class="lg:px-40 md:px-32 px-16 py-3 bg-green-400 text-white rounded capitalize">view
+              details</a>
           </div>
-          <div id="chart"></div>
+          <div id="chart" class="mt-7 md:mt-0"></div>
         </div>
       </div>
       <!-- Best Sellers && Recent Orders -->
-      <div class="grid grid-cols-2 gap-6 mt-6">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 mt-6">
         <!-- Best Sellers -->
         <div class="card bg-white rounded border border-gray-300">
           <div class="card-body p-6">
