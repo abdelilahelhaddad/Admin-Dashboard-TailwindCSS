@@ -23,6 +23,7 @@
 </head>
 
 <body class="bg-gray-100">
+  <!-- Navbar -->
   <div class="flex flex-row items-center w-full p-6 bg-white border-b border-gray-300">
     <div class="flex flex-row w-80">
       <a href="index.html"><img src="./images/logo.png" alt="Logo" class="w-10"></a>
@@ -62,7 +63,9 @@
       </div>
     </div>
   </div>
+  <!-- Main Section -->
   <div class="flex flex-row">
+    <!-- Sidebar -->
     <div class="flex flex-row p-6 border-r border-gray-300 w-80 h-auto bg-white">
       <div class="flex flex-col">
         <p class="tracking-wider text-xs mb-4 uppercase text-gray-600">home</p>
@@ -123,7 +126,9 @@
             class="fad fa-computer-classic mr-2"></i>components</a>
       </div>
     </div>
+    <!-- Content Section -->
     <div class="bg-gray-100 w-screen p-6">
+      <!-- Total Store Infos -->
       <div class="grid grid-cols-4 gap-6">
         <div
           class="card transition duration-300 ease-in-out transform hover:scale-105 bg-white shadow p-6 rounded border border-gray-300">
@@ -190,6 +195,75 @@
           </div>
         </div>
       </div>
+      <!-- Alerts -->
+      <div class="grid grid-cols-2 gap-6 mt-6">
+        <div class="alert text-center font-medium px-auto py-3 bg-red-300 text-red-800 rounded border border-red-600">
+          The Process Failed
+        </div>
+        <div
+          class="alert text-center font-medium px-auto py-3 bg-green-300 text-green-800 rounded border border-green-600">
+          The Process Successed
+        </div>
+      </div>
+      <!-- Today Store Infos -->
+      <div class="grid grid-cols-5 gap-6 mt-6">
+        <div class="card bg-white shadow p-5 rounded border border-gray-300">
+          <div class="card-body flex flex-col">
+            <div class="flex flex-row items-center mb-5">
+              <div class="fad fa-shopping-cart rounded bg-purple-500 px-3 py-2 mr-4 text-sm text-white text-2xl"></div>
+              <div class="">
+                <h2 class="text-gray-900 text-lg font-semibold">52 Orders</h2>
+                <p class="text-gray-400 text-sm font-semibold">58 Items</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow p-5 rounded border border-gray-300">
+          <div class="card-body flex flex-col">
+            <div class="flex flex-row items-center mb-5">
+              <div class="fad fa-wallet rounded bg-green-500 px-3 py-2 mr-4 text-sm text-white text-2xl"></div>
+              <div class="">
+                <h2 class="text-gray-900 text-lg font-semibold">78 Sales</h2>
+                <p class="text-gray-400 text-sm font-semibold">34 Payments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow p-5 rounded border border-gray-300">
+          <div class="card-body flex flex-col">
+            <div class="flex flex-row items-center mb-5">
+              <div class="fad fa-blog rounded bg-blue-500 px-3 py-2 mr-4 text-sm text-white text-2xl"></div>
+              <div class="">
+                <h2 class="text-gray-900 text-lg font-semibold">33 Posts</h2>
+                <p class="text-gray-400 text-sm font-semibold">94 Active</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow p-5 rounded border border-gray-300">
+          <div class="card-body flex flex-col">
+            <div class="flex flex-row items-center mb-5">
+              <div class="fad fa-comments rounded bg-red-500 px-3 py-2 mr-4 text-sm text-white text-2xl"></div>
+              <div class="">
+                <h2 class="text-gray-900 text-lg font-semibold">8 Comments</h2>
+                <p class="text-gray-400 text-sm font-semibold">5 Approved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow p-5 rounded border border-gray-300">
+          <div class="card-body flex flex-col">
+            <div class="flex flex-row items-center mb-5">
+              <div class="fad fa-user rounded bg-green-500 px-3 py-2 mr-4 text-sm text-white text-2xl"></div>
+              <div class="">
+                <h2 class="text-gray-900 text-lg font-semibold">93 Memebrs</h2>
+                <p class="text-gray-400 text-sm font-semibold">63 Online</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sales Overview -->
       <div class="card mt-6 bg-white rounded border border-gray-300">
         <div class="card-header bg-white p-6 rounded-t border-b border-gray-300 flex flex-row justify-between">
           <h1 class="capitalize text-2xl font-medium">sales overview</h1>
@@ -225,7 +299,9 @@
           <div id="chart"></div>
         </div>
       </div>
+      <!-- Best Sellers && Recent Orders -->
       <div class="grid grid-cols-2 gap-6 mt-6">
+        <!-- Best Sellers -->
         <div class="card bg-white rounded border border-gray-300">
           <div class="card-body p-6">
             <div class="flex flex-row items-center justify-between">
@@ -308,6 +384,7 @@
             </table>
           </div>
         </div>
+        <!-- Recent Orders -->
         <div class="card bg-white rounded border border-gray-300">
           <div class="card-body p-6">
             <h1 class="capitalize text-2xl font-medium">recent orders</h1>
@@ -417,74 +494,10 @@
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-6 mt-6">
-        <div class="alert text-center font-medium px-auto py-3 bg-red-300 text-red-800 rounded border border-red-600">
-          The Process Failed
-        </div>
-        <div
-          class="alert text-center font-medium px-auto py-3 bg-green-300 text-green-800 rounded border border-green-600">
-          The Process Successed
-        </div>
-      </div>
-      <div class="grid grid-cols-5 gap-6 mt-6">
-        <div class="card bg-white shadow p-5 rounded border border-gray-300">
-          <div class="card-body flex flex-col">
-            <div class="flex flex-row items-center mb-5">
-              <div class="fad fa-shopping-cart rounded bg-purple-500 px-3 py-2 mr-5 text-sm text-white text-2xl"></div>
-              <div class="">
-                <h2 class="text-gray-900 text-lg font-semibold">52 Orders</h2>
-                <p class="text-gray-400 text-sm font-semibold">58 Items</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card bg-white shadow p-5 rounded border border-gray-300">
-          <div class="card-body flex flex-col">
-            <div class="flex flex-row items-center mb-5">
-              <div class="fad fa-wallet rounded bg-green-500 px-3 py-2 mr-5 text-sm text-white text-2xl"></div>
-              <div class="">
-                <h2 class="text-gray-900 text-lg font-semibold">78 Sales</h2>
-                <p class="text-gray-400 text-sm font-semibold">34 Payments</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card bg-white shadow p-5 rounded border border-gray-300">
-          <div class="card-body flex flex-col">
-            <div class="flex flex-row items-center mb-5">
-              <div class="fad fa-blog rounded bg-blue-500 px-3 py-2 mr-5 text-sm text-white text-2xl"></div>
-              <div class="">
-                <h2 class="text-gray-900 text-lg font-semibold">33 Posts</h2>
-                <p class="text-gray-400 text-sm font-semibold">94 Active</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card bg-white shadow p-5 rounded border border-gray-300">
-          <div class="card-body flex flex-col">
-            <div class="flex flex-row items-center mb-5">
-              <div class="fad fa-comments rounded bg-red-500 px-3 py-2 mr-5 text-sm text-white text-2xl"></div>
-              <div class="">
-                <h2 class="text-gray-900 text-lg font-semibold">8 Comments</h2>
-                <p class="text-gray-400 text-sm font-semibold">5 Approved</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card bg-white shadow p-5 rounded border border-gray-300">
-          <div class="card-body flex flex-col">
-            <div class="flex flex-row items-center mb-5">
-              <div class="fad fa-user rounded bg-green-500 px-3 py-2 mr-5 text-sm text-white text-2xl"></div>
-              <div class="">
-                <h2 class="text-gray-900 text-lg font-semibold">93 Memebrs</h2>
-                <p class="text-gray-400 text-sm font-semibold">63 Online</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-      <script src="./js/script.js"></script>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
