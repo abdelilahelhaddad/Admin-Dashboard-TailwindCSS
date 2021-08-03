@@ -220,7 +220,7 @@
                 in comparison to last month.
               </p>
             </div>
-            <a href="" class="px-48 py-3 bg-green-400 text-white rounded capitalize">view details</a>
+            <a href="" class="px-44 py-3 bg-green-400 text-white rounded capitalize">view details</a>
           </div>
           <div id="chart"></div>
         </div>
@@ -417,10 +417,17 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-  <script src="./js/script.js"></script>
+      <div class="grid grid-cols-2 gap-6 mt-6">
+        <div class="alert text-center font-medium px-auto py-3 bg-red-300 text-red-800 rounded border border-red-600">
+          The Process Failed
+        </div>
+        <div
+          class="alert text-center font-medium px-auto py-3 bg-green-300 text-green-800 rounded border border-green-600">
+          The Process Successed
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+      <script src="./js/script.js"></script>
 </body>
 
 </html>
