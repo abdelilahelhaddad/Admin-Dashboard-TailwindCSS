@@ -25,11 +25,14 @@
 <body class="bg-gray-100">
   <!-- Navbar -->
   <div class="flex flex-row items-center justify-between w-full p-6 bg-white border-b border-gray-300">
-    <div class="flex flex-row w-80">
+    <div class="flex flex-row w-60">
       <a href="index.html"><img src="./images/logo.png" alt="Logo" class="w-10"></a>
-      <strong class="capitalize ml-2 text-gray-800">dashboard</strong>
+      <strong class="capitalize flex-1 ml-2 text-gray-800">dashboard</strong>
+      <button id="sliderBtn" class="text-right text-gray-900 md:hidden block">
+        <i class="fad fa-list-ul"></i>
+      </button>
     </div>
-    <button id="navbarToggle" class="md:hidden block blockfixed right-0 mr-6">
+    <button id="navbarToggle" class="md:hidden block fixed right-0 mr-6">
       <i class="fad fa-chevron-double-down"></i>
     </button>
     <div class="hidden md:flex flex w-full items-center justify-between">
@@ -68,8 +71,14 @@
   <!-- Main Section -->
   <div class="flex flex-row">
     <!-- Sidebar -->
-    <div class="hidden md:flex flex flex-row p-6 border-r border-gray-300 w-80 h-auto bg-white">
+    <div id="sideBar"
+      class="h-100 flex flex-row p-6 border-r border-gray-300 w-80 bg-white fixed top-0 z-30 -ml-80 md:static transition duration-1000 ease-in">
       <div class="flex flex-col">
+        <div id="closeSlider" class="md:hidden text-right mb-4">
+          <button class="p-2">
+            <i class="fad fa-times-circle"></i>
+          </button>
+        </div>
         <p class="tracking-wider text-xs mb-4 uppercase text-gray-600">home</p>
         <a href="#"
           class="mb-3 text-sm capitalize text-medium hover:text-purple-900 transition ease-in-out duration-500"><i
