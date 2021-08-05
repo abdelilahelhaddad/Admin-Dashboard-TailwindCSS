@@ -8,6 +8,8 @@ dropdown.addEventListener('click', (e) => {
   dropdownMenu.classList.toggle('hidden');
 });
 
+//Mobile sider bar
+
 const sliderBtn = document.querySelector('#sliderBtn');
 const closeSlider = document.querySelector('#closeSlider');
 const sideBar = document.querySelector('#sideBar');
@@ -22,6 +24,20 @@ closeSlider.addEventListener('click', (e) => {
   e.preventDefault();
   sideBar.classList.add('-ml-80');
   sideBar.classList.remove('-ml-0');
+});
+
+//Mobile navbar toggle
+
+const navbarToggle = document.querySelector('#navbarToggle');
+const NavBar = document.querySelector('#navBar');
+
+navbarToggle.addEventListener('click', (e) => {
+  // e.preventDefault();
+  if (navBar.classList.contains('hidden')) {
+    navBar.classList.remove("hidden");
+  } else {
+    navBar.classList.add("hidden");
+  }
 });
 
 //Sales Overview Chart
