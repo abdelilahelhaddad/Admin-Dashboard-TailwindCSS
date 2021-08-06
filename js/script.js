@@ -32,7 +32,7 @@ const navbarToggle = document.querySelector('#navbarToggle');
 const NavBar = document.querySelector('#navBar');
 
 navbarToggle.addEventListener('click', (e) => {
-  // e.preventDefault();
+  e.preventDefault();
   if (navBar.classList.contains('hidden')) {
     navBar.classList.remove("hidden");
   } else {
@@ -41,7 +41,6 @@ navbarToggle.addEventListener('click', (e) => {
 });
 
 //Sales Overview Chart
-
 
 var options = {
   chart: {
